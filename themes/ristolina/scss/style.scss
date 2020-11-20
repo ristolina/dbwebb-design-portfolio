@@ -1,0 +1,239 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../shared/scss/base';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: $base-color;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.me-image {
+    float: left;
+    height: 300px;
+    padding-right: 1em;
+}
+
+.header {
+    color: $base-color;
+}
+
+.header {
+    a {
+        color: $base-color;
+        text-decoration: none;
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+.nav {
+    padding: 3em;
+    text-align: right;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-left: 1em;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    a .nav-toggle {
+        color: $base-color;
+    }
+
+    .active,
+    a:hover,
+    .nav-toggle:hover {
+        text-decoration: underline;
+    }
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+.title,
+.logo {
+    float: left;
+    padding: 1em 0 1em 1em;
+}
+
+.logo * {
+    display: block;
+    height: 100%;
+}
+
+.logo img {
+    width: 7em;
+    height: auto;
+}
+
+.footer {
+    background: $base-color;
+    color: $footer-color;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    a {
+        color: $footer-color;
+    }
+}
+
+.social {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
+.slide {
+    overflow-y: hidden !important;
+    transition: height 0.5s ease-in !important;
+}
+
+// #nav {
+//     padding: 3em 0;
+//     text-align: right;
+//
+//     ul {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//     }
+//
+//     ul li {
+//         display: inline-block;
+//         margin-left: 1em;
+//         padding: 0;
+//         font-weight: bold;
+//     }
+//
+//     a:hover,
+//     #nav-toggle:hover {
+//         text-decoration: underline;
+//     }
+// }
+//
+.nav-toggle {
+    display: none;
+}
+
+/* Small devices */
+
+@media screen and (max-width: 767px) {
+    .title,
+    .logo {
+        float: left;
+        padding: 1em 0 1em 1em;
+    }
+
+    .logo * {
+        display: block;
+        height: 100%;
+    }
+
+    .logo img {
+        width: 3em;
+        height: auto;
+    }
+
+    .nav {
+        clear: both;
+        padding: 0;
+
+        ul {
+            padding-bottom: 1em;
+        }
+
+        ul li {
+            display: block;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        ul li a {
+            display: block;
+            padding: 0.5em 0;
+        }
+    }
+
+    .js {
+        .nav-toggle {
+            display: block;
+            float: right;
+            width: 2em;
+            margin: 0.6667em 0;
+            font-size: 1.5rem;
+            line-height: 2em;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .nav-toggle>* {
+            vertical-align: middle;
+        }
+    }
+}

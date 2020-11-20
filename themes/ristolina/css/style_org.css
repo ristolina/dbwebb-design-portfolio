@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+    font-family: arial;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+ h1 {
+     color: #1E2D38;
+ }
+
+.me-image {
+    float: left;
+    height: 300px;
+    padding-right: 1em;
+}
+
+.header {
+    color: #1E2D38;
+}
+
+.header a {
+    color: #1E2D38;
+    text-decoration: none;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.main .container {
+    width: 80%;
+    margin: auto;
+}
+
+.nav {
+    padding: 3em;
+    text-align: right;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0;
+    font-weight: bold;
+}
+
+.nav a, .nav-toggle {
+    color: #1E2D38;
+}
+
+.nav .active, a:hover, .nav-toggle:hover {
+    text-decoration: underline;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+.title, .logo {
+    float: left;
+    padding: 1em 0 1em 1em;
+}
+
+.logo * {
+    display: block;
+    height: 100%;
+}
+
+.logo img {
+    width: 7em;
+    height: auto;
+}
+
+.footer {
+    background: #1E2D38;
+    color: #4D5F6D;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.footer a {
+    color: #4D5F6D;
+}
+
+.social {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
