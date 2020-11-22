@@ -1,0 +1,34 @@
+.kmom-container {
+    display: grid;
+    gap: 2em 2em;
+    padding: 2em;
+    grid-template-columns: 1fr 10fr;
+}
+
+.kmom-container h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.kmom-sidebar ul {
+    list-style: none;
+}
+
+@media screen and (max-width: 960px) {
+    .kmom-container {
+        display: grid;
+        gap: 1em 1em;
+        padding: 2em;
+        grid-template-columns: 1fr;
+    }
+
+    .kmom-container h1 {
+        grid-column: span 1;
+        justify-self: center;
+    }
+
+    .kmom-sidebar {
+        display: none;
+    }
+
+}

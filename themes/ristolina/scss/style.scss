@@ -5,6 +5,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 
 @import '../../shared/scss/base';
+@import 'report';
+@import 'kmom';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
@@ -188,6 +190,7 @@ a {
     .logo {
         float: left;
         padding: 1em 0 1em 1em;
+        width: min-content;
     }
 
     .logo * {
@@ -196,7 +199,7 @@ a {
     }
 
     .logo img {
-        width: 3em;
+        width: 7em;
         height: auto;
     }
 
