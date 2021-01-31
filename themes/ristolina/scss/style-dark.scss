@@ -1,0 +1,275 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../shared/scss/base';
+@import 'report-dark';
+@import 'kmom';
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Code Pro', monospace;
+    color: $compl-two;
+}
+
+p {
+    color: $base-light;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: $base-dark;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+table {
+    border-collapse: separate;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    border: 1px solid $base-darker;
+}
+
+.snapshot {
+    width: 50%;
+    border: 1px solid $base-darker;
+}
+
+img {
+    filter: opacity(60%);
+}
+
+.me-image {
+    float: left;
+    height: 300px;
+    padding-right: 1em;
+}
+
+.header {
+    color: $base-light;
+}
+
+.header {
+    a {
+        color: $compl-two;
+        text-decoration: none;
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+.nav {
+    padding: 3em;
+    text-align: right;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-left: 1em;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    a .nav-toggle {
+        color: $base-light;
+    }
+
+    .active {
+        text-decoration: underline;
+        text-decoration-color: $compl-two;
+    }
+
+    a:hover,
+    .nav-toggle:hover {
+        color: $compl-one;
+    }
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+.title,
+.logo {
+    float: left;
+    padding: 1em 0 1em 1em;
+}
+
+.logo * {
+    display: block;
+    height: 100%;
+}
+
+.logo img {
+    width: 7em;
+    height: auto;
+    filter: opacity(100%);
+}
+
+.footer {
+    background: $base-darker;
+    color: $compl-two;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    a {
+        color: $compl-two;
+    }
+
+    p {
+        color: $compl-two;
+    }
+}
+
+.social {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
+.slide {
+    overflow-y: hidden !important;
+    transition: height 0.5s ease-in !important;
+}
+
+// #nav {
+//     padding: 3em 0;
+//     text-align: right;
+//
+//     ul {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//     }
+//
+//     ul li {
+//         display: inline-block;
+//         margin-left: 1em;
+//         padding: 0;
+//         font-weight: bold;
+//     }
+//
+//     a:hover,
+//     #nav-toggle:hover {
+//         text-decoration: underline;
+//     }
+// }
+//
+.nav-toggle {
+    display: none;
+}
+
+/* Small devices */
+
+@media screen and (max-width: 767px) {
+    .title,
+    .logo {
+        float: left;
+        padding: 1em 0 1em 1em;
+        width: min-content;
+    }
+
+    .logo * {
+        display: block;
+        height: 100%;
+    }
+
+    .logo img {
+        width: 7em;
+        height: auto;
+    }
+
+    .nav {
+        clear: both;
+        padding: 0;
+
+        ul {
+            padding-bottom: 1em;
+        }
+
+        ul li {
+            display: block;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        ul li a {
+            display: block;
+            padding: 0.5em 0;
+        }
+    }
+
+    .js {
+        .nav-toggle {
+            display: block;
+            float: right;
+            width: 2em;
+            margin: 0.6667em 0;
+            font-size: 1.5rem;
+            line-height: 2em;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .nav-toggle>* {
+            vertical-align: middle;
+        }
+    }
+}

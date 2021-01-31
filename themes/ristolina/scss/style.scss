@@ -8,10 +8,10 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'report';
 @import 'kmom';
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 h1,
@@ -20,19 +20,44 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', sans-serif;
-    color: $base-color;
+    font-family: 'Source Code Pro', monospace;
+    color: $compl-two;
+}
+
+p {
+    color: $base-dark;
 }
 
 html,
 body {
     height: 100%;
+    background-color: $base-light;
 }
 
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
+}
+
+table {
+    // border: 2px solid black;
+    border-collapse: separate;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    border: 1px solid $base-darker;
+}
+
+.snapshot {
+    width: 50%;
+    border: 1px solid $base-darker;
+}
+
+img {
+    filter: opacity(100%);
 }
 
 .me-image {
@@ -42,12 +67,12 @@ body {
 }
 
 .header {
-    color: $base-color;
+    color: $base-dark;
 }
 
 .header {
     a {
-        color: $base-color;
+        color: $compl-two;
         text-decoration: none;
     }
 }
@@ -81,13 +106,17 @@ body {
     }
 
     a .nav-toggle {
-        color: $base-color;
+        color: $base-dark;
     }
 
-    .active,
+    .active {
+        text-decoration: underline;
+        text-decoration-color: $compl-two;
+    }
+
     a:hover,
     .nav-toggle:hover {
-        text-decoration: underline;
+        color: $compl-one;
     }
 }
 
@@ -114,16 +143,21 @@ body {
 .logo img {
     width: 7em;
     height: auto;
+    filter: opacity(100%);
 }
 
 .footer {
-    background: $base-color;
-    color: $footer-color;
+    background: $base-darker;
+    color: $compl-two;
     padding-left: 1em;
     padding-right: 1em;
 
     a {
-        color: $footer-color;
+        color: $compl-two;
+    }
+
+    p {
+        color: $compl-two;
     }
 }
 

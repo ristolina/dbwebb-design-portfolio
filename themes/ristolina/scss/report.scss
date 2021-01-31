@@ -15,21 +15,26 @@
 }
 
 .kmom-box {
-    box-shadow: 3px 3px 3px $footer-bg-color;
+    // box-shadow: 3px 3px 3px $base-darker;
+    background-color: $base-dark;
 }
 
 .kmom-content {
     padding: 0 1em;
+
+    p {
+        color: $compl-two;
+    }
 }
 
 .kmom-content .read-more {
-    color: $footer-color;
+    color: $compl-two;
     float: right;
 }
 
 .kmom-title {
-    background-color: $footer-color;
-    color: $footer-bg-color;
+    background-color: $base-dark;
+    color: $compl-two;
     padding: 1em 0 1em 1em;
     margin: 0;
 }

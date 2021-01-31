@@ -1,6 +1,7 @@
 ---
 Title: Kmom01
 Description: This is our kmom01 page.
+Template: kmom
 ---
 
 Kmom01

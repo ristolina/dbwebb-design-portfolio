@@ -18,7 +18,12 @@
     {% endif %}
 
     <!-- End -->
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    {% if config.session.theme == "dark" %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.min.css" type="text/css" />
+    {% else %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" />
+    {% endif %}
+    <!-- <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" /> -->
 
 </head>
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>

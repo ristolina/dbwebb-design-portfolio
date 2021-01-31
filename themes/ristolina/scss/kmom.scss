@@ -12,7 +12,18 @@
 
 .kmom-sidebar ul {
     list-style: none;
+
+    li,
+    a {
+        color: $compl-two;
+    }
 }
+
+// .kmom-container,
+// .kmom-content,
+// p {
+//     color: $base-light;
+// }
 
 @media screen and (max-width: 960px) {
     .kmom-container {

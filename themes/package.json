@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass ristolina/scss/style.scss ristolina/css/style.css --no-source-map",
-    "style-min": "sass ristolina/scss/style.scss ristolina/css/style.min.css --no-source-map --style compressed"
+    "style": "sass ristolina/scss/style.scss ristolina/css/style.css --no-source-map && sass ristolina/scss/style-dark.scss ristolina/css/style-dark.min.css --no-source-map",
+    "style-min": "sass ristolina/scss/style.scss ristolina/css/style.min.css --no-source-map --style compressed && sass ristolina/scss/style-dark.scss ristolina/css/style-dark.min.css --no-source-map --style compressed",
+    "style-dark-min": "sass ristolina/scss/style-dark.scss ristolina/css/style-dark.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

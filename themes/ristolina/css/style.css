@@ -3,7 +3,7 @@
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 .fa,
 .fas,
 .far,
@@ -6474,21 +6474,25 @@ template {
 }
 
 .kmom-box {
-  box-shadow: 3px 3px 3px #1e2d38;
+  background-color: #8A5B3A;
 }
 
 .kmom-content {
   padding: 0 1em;
 }
 
+.kmom-content p {
+  color: #1E2D38;
+}
+
 .kmom-content .read-more {
-  color: #4d5f6d;
+  color: #1E2D38;
   float: right;
 }
 
 .kmom-title {
-  background-color: #4d5f6d;
-  color: #1e2d38;
+  background-color: #8A5B3A;
+  color: #1E2D38;
   padding: 1em 0 1em 1em;
   margin: 0;
 }
@@ -6542,6 +6546,9 @@ template {
 .kmom-sidebar ul {
   list-style: none;
 }
+.kmom-sidebar ul li, .kmom-sidebar ul a {
+  color: #8A5B3A;
+}
 
 @media screen and (max-width: 960px) {
   .kmom-container {
@@ -6561,7 +6568,7 @@ template {
   }
 }
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
 
 h1,
@@ -6569,20 +6576,45 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li {
   font-family: "Open Sans", sans-serif;
-  color: #1e2d38;
+  color: #1E2D38;
+}
+
+p {
+  color: #1E2D38;
 }
 
 html,
 body {
   height: 100%;
+  background-color: #D5DFE6;
 }
 
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
+}
+
+table {
+  border-collapse: separate;
+}
+
+td {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+.snapshot {
+  width: 50%;
+  border: 1px solid black;
+}
+
+img {
+  filter: opacity(100%);
 }
 
 .me-image {
@@ -6592,11 +6624,11 @@ body {
 }
 
 .header {
-  color: #1e2d38;
+  color: #1E2D38;
 }
 
 .header a {
-  color: #1e2d38;
+  color: #8A5B3A;
   text-decoration: none;
 }
 
@@ -6624,12 +6656,16 @@ body {
   font-weight: bold;
 }
 .nav a .nav-toggle {
-  color: #1e2d38;
+  color: #1E2D38;
+}
+.nav .active {
+  color: #EB843B;
+  text-decoration: underline;
 }
 .nav .active,
 .nav a:hover,
 .nav .nav-toggle:hover {
-  text-decoration: underline;
+  color: #EB843B;
 }
 
 .nav-toggle {
@@ -6655,16 +6691,20 @@ body {
 .logo img {
   width: 7em;
   height: auto;
+  filter: opacity(100%);
 }
 
 .footer {
-  background: #1e2d38;
-  color: #4d5f6d;
+  background: #172026;
+  color: #8A5B3A;
   padding-left: 1em;
   padding-right: 1em;
 }
 .footer a {
-  color: #4d5f6d;
+  color: #8A5B3A;
+}
+.footer p {
+  color: #8A5B3A;
 }
 
 .social {
