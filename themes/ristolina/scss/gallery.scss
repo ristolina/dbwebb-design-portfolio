@@ -15,7 +15,14 @@
 }
 
 .image-box {
+    color: #fff;
+}
 
+img,
+embed,
+object,
+video {
+    max-width: 100%;
 }
 
 @media screen and (max-width: 960px) {
