@@ -24,6 +24,12 @@ h6 {
     color: $compl-two;
 }
 
+h4,
+h5,
+h6 {
+    color: $base-dark;
+}
+
 p {
     color: $base-dark;
 }
@@ -148,16 +154,16 @@ img {
 
 .footer {
     background: $base-darker;
-    color: $compl-two;
+    color: $compl-one;
     padding-left: 1em;
     padding-right: 1em;
 
     a {
-        color: $compl-two;
+        color: $compl-one;
     }
 
     p {
-        color: $compl-two;
+        color: $compl-one;
     }
 }
 

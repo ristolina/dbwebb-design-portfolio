@@ -92,10 +92,10 @@ Sidan är ganska stilren men kan bli mer stilren för en renare känsla. Den anv
 
 Sidan är väldigt neutral och ganska enkel vilket kanske inte är optimalt för en sida om en webbutvecklare. Känslan som sidan ger är tyvärr också ganska neutral. Jag har listat de enligt mig tydligaste designprinciperna nedan.
 
-#### Balance
+### Balance
 Informationen är ganska centrerad och kolumner används på vissa undersidor.
 
-#### Unity
+### Unity
 Liknande formed används på de sidor som har former.
 
 Jag tycker sidan behöver tuffas till och förtydliga designprinciperna som används. Jag tycker man borde vara mer konsekvent mellan huvudsida och undersidor samt arbeta mer med Balance och Unity och eventuellt Variety.
